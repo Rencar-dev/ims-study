@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var CurrentConditionsDisplay_1 = require("./classes/CurrentConditionsDisplay");
+var PressureDisplay_1 = require("./classes/PressureDisplay");
+var WeatherData_1 = require("./classes/WeatherData");
+var weatherData = new WeatherData_1["default"]();
+var currentDisplay = new CurrentConditionsDisplay_1["default"](weatherData);
+var pressureDisplay = new PressureDisplay_1["default"](weatherData);
+weatherData.setMeasurements(20, 20, 20);
+weatherData.setMeasurements(40, 30, 10);
+weatherData.setMeasurements(10, 50, 40);
+weatherData.remove(pressureDisplay);
+weatherData.setMeasurements(70, 70, 70);

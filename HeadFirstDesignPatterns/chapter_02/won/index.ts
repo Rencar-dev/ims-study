@@ -1,6 +1,6 @@
 import { WeatherData } from "./WeatherData";
 import { CurrentConditions } from "./displays/CurrentCondition";
-import { NoNoConditions } from "./displays/CurrentCondition copy";
+import { NoNoConditions } from "./displays/NoNoConditions";
 
 (() => {
   const weatherData = new WeatherData();
